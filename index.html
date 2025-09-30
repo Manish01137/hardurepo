@@ -1,71 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Pawan Hardu | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <!-- Font Awesome CDN -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-p1Yg+O4Am1N1G0iE3bRZ3PxZ/v5xv25jk9F8JvKxkX6YZ+yh8iCwl8EXkOqY7vNYPtkjewb5iG1aQQTTfB1jIQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css"/>
 
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+
+  <!-- AOS CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
 </head>
 <body>
-  <!-- header -->
-  <header class="site-header">
+  <!-- HEADER -->
+  <header class="site-header" data-aos="fade-down">
     <div class="logo">
       <i class="fa-solid fa-video"></i>
       <span>VideoEditor</span>
     </div>
-    <button class="menu-btn"><i class="fa-solid fa-bars"></i></button>
-  </header>
-  <header class="site-header">
-    <div class="logo">
-      <i class="fa-solid fa-video"></i>
-      <span>VideoEditor</span>
-    </div>
-    <button class="menu-btn" id="menu-toggle">
-      <i class="fa-solid fa-bars"></i>
-    </button>
-  
-    <!-- Mobile Navigation -->
+    <button class="menu-btn" id="menu-toggle"><i class="fa-solid fa-bars"></i></button>
     <nav class="mobile-nav" id="mobile-nav">
       <ul>
         <li><a href="#hero">Home</a></li>
-        <li><a href="#projects">Portfolio</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
-  <!-- HERO SECTION -->
-  <section class="hero">
+
+  <!-- HERO -->
+  <section id="hero" class="hero">
+    <canvas id="hero-particles"></canvas>
     <div class="overlay"></div>
-    <div class="hero-content">
-      <h1>Crafting Stories <br><span>Through Editing</span></h1>
-      <p>Professional video editor specializing in cinematic storytelling, commercial content, and creative visual narratives.</p>
+    <div class="hero-content" data-aos="zoom-in">
+      <h1 class="hero-title">Crafting Stories <br><span>Through Editing</span></h1>
+      <p class="hero-subtitle">Professional video editor specializing in cinematic storytelling, commercials, and creative visuals.</p>
       <div class="hero-buttons">
-        <a href="#reel" class="btn primary"><i class="fa-solid fa-play"></i> Watch My Reel</a>
-        <a href="#contact" class="btn secondary">Hire Me</a>
+        <a href="mailto:pawan@example.com" class="btn glass primary">
+          <i class="fa-solid fa-envelope"></i> Email Me
+        </a>
+        <a href="https://wa.me/917412078575" class="btn glass secondary" target="_blank">
+          <i class="fa-brands fa-whatsapp"></i> WhatsApp Me
+        </a>
       </div>
     </div>
   </section>
-
-
-  <!-- About me -->
- 
-
   
   
   
+
+  <!-- ABOUT -->
+  <section id="about" class="about-section">
+    <canvas id="about-particles"></canvas>
+    <div class="container about-container">
+      <div class="about-img" data-aos="fade-right">
+        <div class="glass-card">
+          <img src="edior2.jpg" alt="Pawan Hardu">
+        </div>
+      </div>
+      <div class="about-text" data-aos="fade-left">
+        <div class="glass-card">
+          <h2>About Me</h2>
+          <p>Hello! I’m <strong>Pawan Hardu</strong>, a passionate video editor dedicated to transforming raw footage into captivating stories. 
+            With expertise in cinematic storytelling, motion graphics, and sound design, I craft visuals that connect with the audience.</p>
+          <p>My goal is simple: <em>to bring your vision to life with creativity, precision, and storytelling that lasts.</em></p>
+          <a href="#contact" class="btn primary glass">Let’s Collaborate</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- PORTFOLIO -->
   <section id="portfolio" class="portfolio-section">
+    <canvas id="portfolio-particles"></canvas>
     <div class="container">
-      <h2>Featured Projects</h2>
+      <h2 data-aos="fade-up">Featured Projects</h2>
       <div class="portfolio-grid">
   
         <!-- Project 1 -->
-        <article class="project-card">
+        <article class="project-card" data-aos="fade-up" data-aos-delay="100">
           <div class="project-thumb">
-            <img src="editor3.jpg" alt="Project 1">
+            <div class="glass-card">
+              <img src="editor3.jpg" alt="Project 1">
+            </div>
           </div>
           <div class="project-body">
             <span class="tag">Commercial</span>
@@ -76,27 +97,31 @@
         </article>
   
         <!-- Project 2 -->
-        <article class="project-card">
+        <article class="project-card" data-aos="fade-up" data-aos-delay="200">
           <div class="project-thumb">
-            <img src="editor4.jpg" alt="Project 2">
+            <div class="glass-card">
+              <img src="editor4.jpg" alt="Project 2">
+            </div>
           </div>
           <div class="project-body">
             <span class="tag">Photography</span>
             <h3>Travel Photo Series</h3>
-            <p>Capturing landscapes and moments with cinematic tones.</p>
+            <p>Cinematic captures of landscapes and moments.</p>
             <a href="#" class="btn-link">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
           </div>
         </article>
   
         <!-- Project 3 -->
-        <article class="project-card">
+        <article class="project-card" data-aos="fade-up" data-aos-delay="300">
           <div class="project-thumb">
-            <img src="editor7.jpg" alt="Project 3">
+            <div class="glass-card">
+              <img src="editor7.jpg" alt="Project 3">
+            </div>
           </div>
           <div class="project-body">
             <span class="tag">Branding</span>
             <h3>Startup Visual Identity</h3>
-            <p>Creative branding and design that resonates with the audience.</p>
+            <p>Creative branding and design that resonates with audiences.</p>
             <a href="#" class="btn-link">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
           </div>
         </article>
@@ -106,126 +131,99 @@
   </section>
   
 
-  <!-- my service -->
- 
+  <!-- SERVICES -->
   <section id="services" class="services-section">
-    <div class="container">
-      <h2>My Services</h2>
-      <p>Professional video editing services tailored to bring your vision to life with precision and creativity.</p>
+    <!-- Particles Canvas -->
+    <canvas id="services-particles"></canvas>
   
+    <div class="container">
+      <h2 data-aos="fade-up">My Services</h2>
+      <p data-aos="fade-up" data-aos-delay="100">
+        Professional video editing services tailored to bring your vision to life with creativity.
+      </p>
       <div class="services-grid">
   
-        <!-- Video Editing -->
-        <div class="service-card">
+        <!-- Service 1 -->
+        <div class="service-card" data-aos="flip-left">
           <div class="service-icon">🎬</div>
           <h3>Video Editing</h3>
-          <p>Professional <span class="highlight">video editing</span> with precise cuts, seamless transitions, and compelling storytelling.</p>
-          <ul>
-            <li>Timeline editing</li>
-            <li>Multi-camera sync</li>
-            <li>Advanced transitions</li>
-            <li>Pacing optimization</li>
-          </ul>
+          <p>Seamless cuts, multi-camera sync, pacing optimization, and storytelling.</p>
         </div>
   
-        <!-- Color Grading -->
-        <div class="service-card">
+        <!-- Service 2 -->
+        <div class="service-card" data-aos="flip-left" data-aos-delay="100">
           <div class="service-icon">🎨</div>
           <h3>Color Grading</h3>
-          <p>Transform your footage with professional <span class="highlight">color correction</span> and cinematic color grading.</p>
-          <ul>
-            <li>Color correction</li>
-            <li>Cinematic looks</li>
-            <li>Skin tone adjustment</li>
-            <li>Creative styling</li>
-          </ul>
+          <p>Professional correction and cinematic grading for premium looks.</p>
         </div>
   
-        <!-- Sound Design -->
-        <div class="service-card">
+        <!-- Service 3 -->
+        <div class="service-card" data-aos="flip-left" data-aos-delay="200">
           <div class="service-icon">🎧</div>
           <h3>Sound Design</h3>
-          <p>Enhance your videos with professional <span class="highlight">audio editing</span>, mixing, and sound effects.</p>
-          <ul>
-            <li>Audio mixing</li>
-            <li>Sound effects</li>
-            <li>Music synchronization</li>
-            <li>Voice enhancement</li>
-          </ul>
+          <p>Audio mixing, music sync, effects, and clean voice enhancement.</p>
         </div>
   
-        <!-- Motion Graphics -->
-        <div class="service-card">
+        <!-- Service 4 -->
+        <div class="service-card" data-aos="flip-left" data-aos-delay="300">
           <div class="service-icon">✨</div>
           <h3>Motion Graphics</h3>
-          <p>Eye-catching <span class="highlight">animated graphics</span>, titles, and visual effects to elevate your content.</p>
-          <ul>
-            <li>Title animations</li>
-            <li>Logo animations</li>
-            <li>Infographics</li>
-            <li>Visual effects</li>
-          </ul>
+          <p>Animated titles, logo animations, infographics, and visual effects.</p>
+        </div>
+  
+        <!-- Service 5 -->
+        <div class="service-card" data-aos="zoom-in" data-aos-delay="400">
+          <div class="service-icon">🎞️</div>
+          <h3>DaVinci Resolve</h3>
+          <p>Expert in editing & color grading with DaVinci Resolve for cinematic visuals.</p>
+        </div>
+  
+        <!-- Service 6 -->
+        <div class="service-card" data-aos="zoom-in" data-aos-delay="500">
+          <div class="service-icon">💻</div>
+          <h3>Premiere Pro</h3>
+          <p>Professional video editing with Adobe Premiere Pro for sleek projects.</p>
+        </div>
+  
+        <!-- Service 7 -->
+        <div class="service-card" data-aos="zoom-in" data-aos-delay="600">
+          <div class="service-icon">⚡</div>
+          <h3>After Effects</h3>
+          <p>Dynamic animations, VFX, and advanced motion graphics using After Effects.</p>
         </div>
   
       </div>
     </div>
   </section>
   
-  <!-- reviw -->
-  <section id="testimonials" class="testimonials-section">
-    <div class="container">
-      <h2>What Clients Say</h2>
-      <p>Hear from some of the amazing clients I've worked with and their experience with my services.</p>
   
-      <div class="testimonials-grid">
-  
-        <!-- Testimonial 1 -->
-        <div class="testimonial-card">
-          <p>"Manish did an incredible job editing our promotional video. The pacing and transitions were perfect!"</p>
-          <h4>- Sarah Johnson</h4>
-        </div>
-  
-        <!-- Testimonial 2 -->
-        <div class="testimonial-card">
-          <p>"The color grading on our footage brought it to life! Highly recommend his professional services."</p>
-          <h4>- Alex Brown</h4>
-        </div>
-  
-        <!-- Testimonial 3 -->
-        <div class="testimonial-card">
-          <p>"Sound design and audio mixing were top-notch. Our videos now sound as good as they look."</p>
-          <h4>- Emily Davis</h4>
-        </div>
-  
-      </div>
-    </div>
-  </section>
-  
+
+  <!-- STATS -->
   <section id="statistics" class="statistics-section">
     <div class="container">
       <div class="stats-grid">
   
-        <!-- Projects Completed -->
-        <div class="stat-card">
-          <h3 class="counter" data-target="150">0</h3>
+        <!-- Projects -->
+        <div class="stat-card" data-aos="zoom-in">
+          <h3 class="counter" data-target="275" data-suffix="+">0</h3>
           <p>Projects Completed</p>
         </div>
   
-        <!-- Client Satisfaction -->
-        <div class="stat-card">
-          <h3 class="counter" data-target="98">0</h3>
-          <p>Client Satisfaction</p>
+        <!-- Clients -->
+        <div class="stat-card" data-aos="zoom-in" data-aos-delay="100">
+          <h3 class="counter" data-target="5" data-suffix="">0</h3>
+          <p>Happy Clients</p>
         </div>
   
-        <!-- Views Generated -->
-        <div class="stat-card">
-          <h3 class="counter" data-target="50000000">0</h3>
+        <!-- Views -->
+        <div class="stat-card" data-aos="zoom-in" data-aos-delay="200">
+          <h3 class="counter" data-target="75" data-suffix="M+">0</h3>
           <p>Views Generated</p>
         </div>
   
-        <!-- Average Turnaround -->
-        <div class="stat-card">
-          <h3 class="counter-text">24hr</h3>
+        <!-- Turnaround -->
+        <div class="stat-card" data-aos="zoom-in" data-aos-delay="300">
+          <h3 class="counter-text">5–8hr</h3>
           <p>Average Turnaround</p>
         </div>
   
@@ -233,58 +231,291 @@
     </div>
   </section>
   
-  <section id="contact-cta" class="cta-section">
+  
+  
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="testimonials-section">
+    <!-- Particles Canvas -->
+    <canvas id="testimonials-particles"></canvas>
+  
     <div class="container">
-      <h2>Let's Work Together</h2>
-      <p>Ready to bring your vision to life? Get in touch and let's create something amazing together.</p>
-      <a href="#contact" class="cta-btn">Contact Me</a>
+      <h2 data-aos="fade-up">What Clients Say</h2>
+      <div class="testimonials-grid">
+  
+        <!-- Testimonial 1 -->
+        <div class="testimonial-card" data-aos="fade-right" data-aos-delay="100">
+          <p>"Pawan transformed our promo video. Perfect pacing and flow!"</p>
+          <h4>- Sarah Johnson</h4>
+        </div>
+  
+        <!-- Testimonial 2 -->
+        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+          <p>"The grading made our footage cinematic. Outstanding work!"</p>
+          <h4>- Alex Brown</h4>
+        </div>
+  
+        <!-- Testimonial 3 -->
+        <div class="testimonial-card" data-aos="fade-left" data-aos-delay="300">
+          <p>"Sound design was top-tier. The final cut exceeded expectations."</p>
+          <h4>- Emily Davis</h4>
+        </div>
+  
+      </div>
     </div>
   </section>
   
-  
+
+  <!-- CONTACT -->
   <section id="contact" class="contact-section">
-    <div class="container">
+    <!-- Particles Canvas -->
+    <canvas id="contact-particles"></canvas>
+  
+    <div class="container" data-aos="fade-up">
       <h2>Send Me a Message</h2>
-      <form class="contact-form">
-        <div class="form-group">
-          <label for="name">Name *</label>
-          <input type="text" id="name" name="name" placeholder="Your Name" required>
-        </div>
-  
-        <div class="form-group">
-          <label for="email">Email *</label>
-          <input type="email" id="email" name="email" placeholder="Your Email" required>
-        </div>
-  
-        <div class="form-group">
-          <label for="subject">Subject</label>
-          <input type="text" id="subject" name="subject" placeholder="Subject">
-        </div>
-  
-        <div class="form-group">
-          <label for="message">Message *</label>
-          <textarea id="message" name="message" placeholder="Your Message" rows="6" required></textarea>
-        </div>
-  
+      <p class="contact-subtitle">Have a project in mind? Let's create something amazing together.</p>
+      <form class="contact-form" data-aos="fade-up" data-aos-delay="100">
+        <div class="form-group"><input type="text" placeholder="Your Name" required></div>
+        <div class="form-group"><input type="email" placeholder="Your Email" required></div>
+        <div class="form-group"><input type="text" placeholder="Subject"></div>
+        <div class="form-group"><textarea placeholder="Your Message" rows="6" required></textarea></div>
         <button type="submit" class="submit-btn">Send Message</button>
       </form>
     </div>
   </section>
   
-  <footer class="site-footer">
+  
+  <!-- FOOTER -->
+  <footer class="site-footer" data-aos="fade-up">
     <div class="container">
-      <p>© 2024 VideoEditor. All rights reserved. | Crafting stories through editing.</p>
+      <p>© 2024 VideoEditor | Crafted with ❤️</p>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="mailto:example@mail.com"><i class="fa-solid fa-envelope"></i></a>
+      </div>
     </div>
   </footer>
   
   <!-- WhatsApp Sticky Button -->
-  <!-- WhatsApp Sticky Button -->
-<a href="https://wa.me/917412078575" class="whatsapp-btn" target="_blank">
-  <img src="whatsppp1.jpg" alt="WhatsApp" />
-</a>
+  <a href="https://wa.me/917412078575" class="whatsapp-btn" target="_blank">
+    <img src="whatsppp1.jpg" alt="WhatsApp"/>
+  </a>
 
+  <!-- JS -->
+  <script>
+    const canvas = document.getElementById("services-particles");
+    const ctx = canvas.getContext("2d");
+    let particles = [];
   
-
+    function resizeCanvas() {
+      canvas.width = window.innerWidth;
+      canvas.height = document.querySelector("#services").offsetHeight;
+    }
+    window.addEventListener("resize", resizeCanvas);
+    resizeCanvas();
+  
+    class Particle {
+      constructor() {
+        this.x = Math.random() * canvas.width;
+        this.y = Math.random() * canvas.height;
+        this.radius = Math.random() * 2 + 1;
+        this.dx = (Math.random() - 0.5) * 0.5;
+        this.dy = (Math.random() - 0.5) * 0.5;
+      }
+      draw() {
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+        ctx.fillStyle = "rgba(226,255,216,0.7)";
+        ctx.fill();
+      }
+      update() {
+        this.x += this.dx;
+        this.y += this.dy;
+  
+        if (this.x < 0 || this.x > canvas.width) this.dx *= -1;
+        if (this.y < 0 || this.y > canvas.height) this.dy *= -1;
+  
+        this.draw();
+      }
+    }
+  
+    function initParticles() {
+      particles = [];
+      for (let i = 0; i < 70; i++) {
+        particles.push(new Particle());
+      }
+    }
+  
+    function animateParticles() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      particles.forEach(p => p.update());
+      requestAnimationFrame(animateParticles);
+    }
+  
+    initParticles();
+    animateParticles();
+  </script>
+  
+  <script>
+    // Counter Animation with suffix
+    const counters = document.querySelectorAll(".counter");
+    let started = false;
+  
+    function animateCounters() {
+      if (started) return;
+      const section = document.querySelector("#statistics");
+      const sectionTop = section.getBoundingClientRect().top;
+      const triggerPoint = window.innerHeight * 0.8;
+  
+      if (sectionTop < triggerPoint) {
+        counters.forEach(counter => {
+          const target = +counter.getAttribute("data-target");
+          const suffix = counter.getAttribute("data-suffix") || "";
+          
+          const updateCount = () => {
+            const current = +counter.innerText.replace(/\D/g, ""); // remove non-digits
+            const increment = target / 150;
+  
+            if (current < target) {
+              counter.innerText = Math.ceil(current + increment) + suffix;
+              setTimeout(updateCount, 20);
+            } else {
+              counter.innerText = target + suffix;
+            }
+          };
+          updateCount();
+        });
+        started = true;
+      }
+    }
+  
+    window.addEventListener("scroll", animateCounters);
+  </script>
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const canvas = document.getElementById("testimonials-particles");
+      if (!canvas) return; // safety check
+      const ctx = canvas.getContext("2d");
+      let particles = [];
+  
+      function resizeCanvas() {
+        canvas.width = window.innerWidth;
+        const section = document.querySelector("#testimonials");
+        canvas.height = section ? section.offsetHeight : window.innerHeight;
+      }
+  
+      window.addEventListener("resize", resizeCanvas);
+      resizeCanvas();
+  
+      class Particle {
+        constructor() {
+          this.x = Math.random() * canvas.width;
+          this.y = Math.random() * canvas.height;
+          this.radius = Math.random() * 2 + 1;
+          this.dx = (Math.random() - 0.5) * 0.5;
+          this.dy = (Math.random() - 0.5) * 0.5;
+        }
+        draw() {
+          ctx.beginPath();
+          ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+          ctx.fillStyle = "rgba(226,255,216,0.7)";
+          ctx.fill();
+        }
+        update() {
+          this.x += this.dx;
+          this.y += this.dy;
+  
+          if (this.x < 0 || this.x > canvas.width) this.dx *= -1;
+          if (this.y < 0 || this.y > canvas.height) this.dy *= -1;
+  
+          this.draw();
+        }
+      }
+  
+      function initParticles() {
+        particles = [];
+        for (let i = 0; i < 60; i++) {
+          particles.push(new Particle());
+        }
+      }
+  
+      function animateParticles() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        particles.forEach(p => p.update());
+        requestAnimationFrame(animateParticles);
+      }
+  
+      initParticles();
+      animateParticles();
+    });
+  </script>
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const canvas = document.getElementById("contact-particles");
+      if (!canvas) return;
+      const ctx = canvas.getContext("2d");
+      let particles = [];
+  
+      function resizeCanvas() {
+        canvas.width = window.innerWidth;
+        const section = document.querySelector("#contact");
+        canvas.height = section ? section.offsetHeight : window.innerHeight;
+      }
+  
+      window.addEventListener("resize", resizeCanvas);
+      resizeCanvas();
+  
+      class Particle {
+        constructor() {
+          this.x = Math.random() * canvas.width;
+          this.y = Math.random() * canvas.height;
+          this.radius = Math.random() * 2 + 1;
+          this.dx = (Math.random() - 0.5) * 0.5;
+          this.dy = (Math.random() - 0.5) * 0.5;
+        }
+        draw() {
+          ctx.beginPath();
+          ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+          ctx.fillStyle = "rgba(226,255,216,0.6)";
+          ctx.fill();
+        }
+        update() {
+          this.x += this.dx;
+          this.y += this.dy;
+  
+          if (this.x < 0 || this.x > canvas.width) this.dx *= -1;
+          if (this.y < 0 || this.y > canvas.height) this.dy *= -1;
+  
+          this.draw();
+        }
+      }
+  
+      function initParticles() {
+        particles = [];
+        for (let i = 0; i < 60; i++) {
+          particles.push(new Particle());
+        }
+      }
+  
+      function animateParticles() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        particles.forEach(p => p.update());
+        requestAnimationFrame(animateParticles);
+      }
+  
+      initParticles();
+      animateParticles();
+    });
+  </script>
+  
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <script src="script.js"></script>
+  <script>
+    AOS.init({duration: 1200, once: true});
+  </script>
 </body>
 </html>
