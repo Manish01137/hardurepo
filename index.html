@@ -17,7 +17,7 @@
   <header class="site-header" data-aos="fade-down">
     <div class="logo">
       <i class="fa-solid fa-video"></i>
-      <span>VideoEditor</span>
+      <span>Pawan Hardu</span>
     </div>
     <button class="menu-btn" id="menu-toggle"><i class="fa-solid fa-bars"></i></button>
     <nav class="mobile-nav" id="mobile-nav">
@@ -39,7 +39,7 @@
       <h1 class="hero-title">Crafting Stories <br><span>Through Editing</span></h1>
       <p class="hero-subtitle">Professional video editor specializing in cinematic storytelling, commercials, and creative visuals.</p>
       <div class="hero-buttons">
-        <a href="mailto:pawan@example.com" class="btn glass primary">
+        <a href="hardupawan69@gmail.com" class="btn glass primary">
           <i class="fa-solid fa-envelope"></i> Email Me
         </a>
         <a href="https://wa.me/917412078575" class="btn glass secondary" target="_blank">
@@ -64,14 +64,18 @@
       <div class="about-text" data-aos="fade-left">
         <div class="glass-card">
           <h2>About Me</h2>
-          <p>Hello! I’m <strong>Pawan Hardu</strong>, a passionate video editor dedicated to transforming raw footage into captivating stories. 
-            With expertise in cinematic storytelling, motion graphics, and sound design, I craft visuals that connect with the audience.</p>
-          <p>My goal is simple: <em>to bring your vision to life with creativity, precision, and storytelling that lasts.</em></p>
+          <p class="about-paragraph">
+            I’m <strong>Pawan</strong>, a <span class="highlight">video editor</span> with <strong>70M+ shorts views</strong> across social platforms. 
+            From <strong>short reels</strong> to <strong>long-form investigative pieces</strong>, I help creators and brands turn raw footage into <span class="highlight">impactful narratives</span>. 
+            I’ve worked with creators like <strong>OpenLetterYT</strong> and <strong>Rohit (Finance with Sharan)</strong>. 
+            My goal: <span class="highlight">make every frame feel alive with purpose</span>.
+          </p>
           <a href="#contact" class="btn primary glass">Let’s Collaborate</a>
         </div>
       </div>
     </div>
   </section>
+  
   
 
   <!-- PORTFOLIO -->
@@ -303,6 +307,225 @@
   </a>
 
   <!-- JS -->
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const canvas = document.getElementById("hero-particles");
+      if (!canvas) return; // safety check
+      const ctx = canvas.getContext("2d");
+      let particles = [];
+    
+      function resizeCanvas() {
+        canvas.width = window.innerWidth;
+        const section = document.querySelector("#hero");
+        canvas.height = section ? section.offsetHeight : window.innerHeight;
+      }
+    
+      window.addEventListener("resize", resizeCanvas);
+      resizeCanvas();
+    
+      class Particle {
+        constructor() {
+          this.x = Math.random() * canvas.width;
+          this.y = Math.random() * canvas.height;
+          this.radius = Math.random() * 2 + 1;
+          this.dx = (Math.random() - 0.5) * 0.5;
+          this.dy = (Math.random() - 0.5) * 0.5;
+        }
+        draw() {
+          ctx.beginPath();
+          ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+          ctx.fillStyle = "rgba(226,255,216,0.7)";
+          ctx.fill();
+        }
+        update() {
+          this.x += this.dx;
+          this.y += this.dy;
+    
+          if (this.x < 0 || this.x > canvas.width) this.dx *= -1;
+          if (this.y < 0 || this.y > canvas.height) this.dy *= -1;
+    
+          this.draw();
+        }
+      }
+    
+      function initParticles() {
+        particles = [];
+        for (let i = 0; i < 80; i++) { // adjust number of particles
+          particles.push(new Particle());
+        }
+      }
+    
+      function animateParticles() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        particles.forEach(p => p.update());
+        requestAnimationFrame(animateParticles);
+      }
+    
+      initParticles();
+      animateParticles();
+    });
+    </script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const canvas = document.getElementById("about-particles");
+    if (!canvas) return;
+    const ctx = canvas.getContext("2d");
+    let particles = [];
+  
+    function resizeCanvas() {
+      canvas.width = window.innerWidth;
+      const section = document.querySelector("#about");
+      canvas.height = section ? section.offsetHeight : window.innerHeight;
+    }
+  
+    window.addEventListener("resize", resizeCanvas);
+    resizeCanvas();
+  
+    class Particle {
+      constructor() {
+        this.x = Math.random() * canvas.width;
+        this.y = Math.random() * canvas.height;
+        this.radius = Math.random() * 2 + 1;
+        this.dx = (Math.random() - 0.5) * 0.5;
+        this.dy = (Math.random() - 0.5) * 0.5;
+      }
+      draw() {
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+        ctx.fillStyle = "rgba(226,255,216,0.7)";
+        ctx.fill();
+      }
+      update() {
+        this.x += this.dx;
+        this.y += this.dy;
+  
+        if (this.x < 0 || this.x > canvas.width) this.dx *= -1;
+        if (this.y < 0 || this.y > canvas.height) this.dy *= -1;
+  
+        this.draw();
+      }
+    }
+  
+    function initParticles() {
+      particles = [];
+      for (let i = 0; i < 60; i++) {
+        particles.push(new Particle());
+      }
+    }
+  
+    function animateParticles() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      particles.forEach(p => p.update());
+      requestAnimationFrame(animateParticles);
+    }
+  
+    initParticles();
+    animateParticles();
+  });
+  </script>
+ 
+ <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const canvas = document.getElementById("portfolio-particles");
+    if (!canvas) return;
+    const ctx = canvas.getContext("2d");
+    let particles = [];
+  
+    function resizeCanvas() {
+      canvas.width = window.innerWidth;
+      const section = document.querySelector("#portfolio");
+      canvas.height = section ? section.offsetHeight : window.innerHeight;
+    }
+  
+    window.addEventListener("resize", resizeCanvas);
+    resizeCanvas();
+  
+    class Particle {
+      constructor() {
+        this.x = Math.random() * canvas.width;
+        this.y = Math.random() * canvas.height;
+        this.radius = Math.random() * 2 + 1;
+        this.dx = (Math.random() - 0.5) * 0.5;
+        this.dy = (Math.random() - 0.5) * 0.5;
+      }
+      draw() {
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+        ctx.fillStyle = "rgba(226,255,216,0.7)";
+        ctx.fill();
+      }
+      update() {
+        this.x += this.dx;
+        this.y += this.dy;
+  
+        if (this.x < 0 || this.x > canvas.width) this.dx *= -1;
+        if (this.y < 0 || this.y > canvas.height) this.dy *= -1;
+  
+        this.draw();
+      }
+    }
+  
+    function initParticles() {
+      particles = [];
+      for (let i = 0; i < 60; i++) {
+        particles.push(new Particle());
+      }
+    }
+  
+    function animateParticles() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      particles.forEach(p => p.update());
+      requestAnimationFrame(animateParticles);
+    }
+  
+    initParticles();
+    animateParticles();
+  });
+  </script>
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const counters = document.querySelectorAll(".counter");
+      let started = false;
+    
+      function animateCounters() {
+        if (started) return; // prevent re-trigger
+        const section = document.querySelector("#statistics");
+        const sectionTop = section.getBoundingClientRect().top;
+        const triggerPoint = window.innerHeight * 0.8;
+    
+        if (sectionTop < triggerPoint) {
+          counters.forEach(counter => {
+            const target = +counter.getAttribute("data-target");
+            const suffix = counter.getAttribute("data-suffix") || "";
+    
+            let current = 0;
+            const increment = Math.ceil(target / 150); // adjust speed
+    
+            const updateCount = () => {
+              current += increment;
+              if (current < target) {
+                counter.innerText = current + suffix;
+                requestAnimationFrame(updateCount);
+              } else {
+                counter.innerText = target + suffix;
+              }
+            };
+    
+            updateCount();
+          });
+          started = true;
+        }
+      }
+    
+      window.addEventListener("scroll", animateCounters);
+      animateCounters(); // trigger in case already visible
+    });
+    </script>
+    
+
   <script>
     const canvas = document.getElementById("services-particles");
     const ctx = canvas.getContext("2d");
