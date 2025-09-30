@@ -9,6 +9,7 @@
     "axe/name-role-value": "off",
     "compat-api/html": "off",
     "compat-api/css": "off",
-    "disown-opener": "off"
+    "disown-opener": "off",
+    "css-prefix-order": "off"
   }
 }
