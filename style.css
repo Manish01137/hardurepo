@@ -1348,3 +1348,54 @@ a {text-decoration:none;}
 .about-text p {
   margin-bottom: 1rem;       /* Less empty space below paragraphs */
 }
+project-thumb video {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.project-thumb:hover video {
+  transform: scale(1.02);
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+}
+
+.project-thumb iframe {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.project-body {
+  padding: 20px;
+  text-align: center;
+}
+
+.project-body h3 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.tag {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #ff6b6b;
+  text-transform: uppercase;
+}
