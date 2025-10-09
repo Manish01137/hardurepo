@@ -1399,3 +1399,19 @@ project-thumb video {
   color: #ff6b6b;
   text-transform: uppercase;
 }
+
+
+.tag-button {
+  display: inline-block;
+  background: #00bcd4; /* or match your theme */
+  color: white;
+  padding: 5px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.tag-button:hover {
+  background: #0097a7;
+}
