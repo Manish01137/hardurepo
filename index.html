@@ -3,896 +3,442 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Pawan Hardu | Portfolio</title>
+  <title>Pawan Hardu | Video Editor</title>
   <link rel="stylesheet" href="style.css"/>
-
-  <!-- Font Awesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=Bebas+Neue&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
-
-  <!-- AOS CSS -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
 </head>
 <body>
-  <!-- HEADER -->
-  <header class="site-header" data-aos="fade-down">
-    <div class="logo">
-      <i class="fa-solid fa-video"></i>
-      <span>Pawan Hardu</span>
+
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- LOADER -->
+  <div class="page-loader" id="pageLoader">
+    <div class="loader-inner">
+      <div class="loader-line"></div>
+      <span class="loader-text">PAWAN HARDU</span>
     </div>
-    <button class="menu-btn" id="menu-toggle"><i class="fa-solid fa-bars"></i></button>
-    <nav class="mobile-nav" id="mobile-nav">
-      <ul>
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+  </div>
+
+  <!-- HEADER -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a href="#hero" class="logo">
+        <span class="logo-mark">PH</span>
+        <span class="logo-text">Pawan Hardu</span>
+      </a>
+      <nav class="desktop-nav">
+        <a href="#about">About</a>
+        <a href="#portfolio">Work</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a href="https://wa.me/917412078575" class="header-cta" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i> Let's Talk
+      </a>
+      <button class="burger" id="burgerBtn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-nav" id="mobileNav">
+      <a href="#about" class="mob-link">About</a>
+      <a href="#portfolio" class="mob-link">Work</a>
+      <a href="#services" class="mob-link">Services</a>
+      <a href="#contact" class="mob-link">Contact</a>
+    </div>
   </header>
 
   <!-- HERO -->
   <section id="hero" class="hero">
-    <canvas id="hero-particles"></canvas>
-    <div class="overlay"></div>
-    <div class="hero-content" data-aos="zoom-in">
-      <h1 class="hero-title">Crafting Stories <br><span>Through Editing</span></h1>
-      <p class="hero-subtitle">Professional video editor specializing in cinematic storytelling, commercials, and creative visuals.</p>
-      <div class="hero-buttons">
-        <a href="mailto:hardupawan69@gmail.com" class="btn glass primary">
-          <i class="fa-solid fa-envelope"></i> Email Me
-        </a>
-        
-        <a href="https://wa.me/917412078575" class="btn glass secondary" target="_blank">
-          <i class="fa-brands fa-whatsapp"></i> WhatsApp Me
-        </a>
+    <canvas id="heroCanvas"></canvas>
+    <div class="hero-bg-text">EDITOR</div>
+    <div class="hero-inner">
+      <div class="hero-badge"><span class="badge-dot"></span>Available for projects</div>
+      <h1 class="hero-title">
+        <span class="line-wrap"><em>Crafting</em></span>
+        <span class="line-wrap">Stories</span>
+        <span class="line-wrap accent-line">Through Editing</span>
+      </h1>
+      <p class="hero-sub">Professional video editor — cinematic storytelling, commercials &amp; reels. <strong>70M+ views</strong> delivered.</p>
+      <div class="hero-actions">
+        <a href="#portfolio" class="btn-primary">View My Work</a>
+        <a href="mailto:hardupawan69@gmail.com" class="btn-ghost">Email Me</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hstat"><strong>70M+</strong><span>Views</span></div>
+        <div class="hstat-divider"></div>
+        <div class="hstat"><strong>300+</strong><span>Projects</span></div>
+        <div class="hstat-divider"></div>
+        <div class="hstat"><strong>5–8hr</strong><span>Turnaround</span></div>
       </div>
     </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
   </section>
-  
-  
-  
+
+  <!-- MARQUEE -->
+  <div class="marquee-bar">
+    <div class="marquee-track">
+      <span>Video Editing</span><span class="mdot">✦</span>
+      <span>Motion Graphics</span><span class="mdot">✦</span>
+      <span>Sound Design</span><span class="mdot">✦</span>
+      <span>Color Grading</span><span class="mdot">✦</span>
+      <span>DaVinci Resolve</span><span class="mdot">✦</span>
+      <span>After Effects</span><span class="mdot">✦</span>
+      <span>Premiere Pro</span><span class="mdot">✦</span>
+      <span>Cinematic Reels</span><span class="mdot">✦</span>
+      <span>Video Editing</span><span class="mdot">✦</span>
+      <span>Motion Graphics</span><span class="mdot">✦</span>
+      <span>Sound Design</span><span class="mdot">✦</span>
+      <span>Color Grading</span><span class="mdot">✦</span>
+      <span>DaVinci Resolve</span><span class="mdot">✦</span>
+      <span>After Effects</span><span class="mdot">✦</span>
+      <span>Premiere Pro</span><span class="mdot">✦</span>
+      <span>Cinematic Reels</span><span class="mdot">✦</span>
+    </div>
+  </div>
 
   <!-- ABOUT -->
   <section id="about" class="about-section">
-    <canvas id="about-particles"></canvas>
-    <div class="container about-container">
-      <div class="about-img" data-aos="fade-right">
-        <div class="glass-card">
-          <img src="pawan32.jpeg" alt="Pawan Hardu">
+    <div class="about-grid">
+      <div class="about-left" data-reveal>
+        <div class="about-img-wrap">
+          <img src="pawan32.jpeg" alt="Pawan Hardu" class="about-photo"/>
+          <div class="about-img-border"></div>
+          <div class="about-img-tag">Video Editor</div>
         </div>
       </div>
-      <div class="about-text" data-aos="fade-left">
-        <div class="glass-card">
-          <h2>About Me</h2>
-          <p class="about-paragraph">
-            I’m <strong>Pawan</strong>, a <span class="highlight">video editor</span> with <strong>70M+ shorts views</strong> across social platforms. 
-            From <strong>short reels</strong> to <strong>long-form investigative pieces</strong>, I help creators and brands turn raw footage into <span class="highlight">impactful narratives</span>. 
-            I’ve worked with creators like <strong>OpenLetterYT</strong> and <strong>Rohit (Finance with Sharan)</strong>. 
-            My goal: <span class="highlight">make every frame feel alive with purpose</span>.
-          </p>
-          <a href="#contact" class="btn primary glass">Let’s Collaborate</a>
+      <div class="about-right" data-reveal data-delay="200">
+        <span class="section-eyebrow">About Me</span>
+        <h2 class="section-title">I make frames <em>feel alive</em></h2>
+        <p class="about-body">I'm <strong>Pawan</strong> — a video editor obsessed with narrative precision. With <strong>70M+ shorts views</strong> across social platforms, I've worked with creators like <strong>OpenLetterYT</strong> and <strong>Rohit (Finance with Sharan)</strong>.</p>
+        <p class="about-body">From snappy short-form reels to long-form investigative pieces, every project gets the same treatment: purpose-driven cuts, perfect pacing, and a story that lands.</p>
+        <div class="about-tools">
+          <span>DaVinci Resolve</span>
+          <span>After Effects</span>
+          <span>Premiere Pro</span>
         </div>
+        <a href="#contact" class="btn-primary">Let's Collaborate</a>
       </div>
     </div>
   </section>
-  
-  
 
-  <!-- PORTFOLIO -->
+  <!-- ══════════════════════════════════════
+       PORTFOLIO — ALL DRIVE VIDEOS
+  ══════════════════════════════════════ -->
   <section id="portfolio" class="portfolio-section">
-    <canvas id="portfolio-particles"></canvas>
+    <canvas id="portfolioCanvas"></canvas>
     <div class="container">
-      <h2 data-aos="fade-up">Featured Projects</h2>
+
+      <div class="section-header" data-reveal>
+        <span class="section-eyebrow">Featured Work</span>
+        <h2 class="section-title">Recent Projects</h2>
+      </div>
+
+      <!-- SOUND TOGGLE -->
+      <div class="mute-bar" data-reveal>
+        <button class="mute-toggle" id="globalMuteBtn">
+          <i class="fa-solid fa-volume-xmark" id="muteIcon"></i>
+          <span id="muteLabel">Sound Off — Click to Unmute</span>
+        </button>
+        <span class="mute-hint">All videos start muted. Toggle to hear audio.</span>
+      </div>
+
       <div class="portfolio-grid">
-  
-        <!-- Project 1 -->
-        <article class="project-card" data-aos="fade-up" data-aos-delay="400">
-          <div class="project-thumb glass-card">
-            <iframe src="https://www.instagram.com/reel/DLKUXVNBqQB/embed" 
-                    width="100%" height="300" frameborder="0" allowfullscreen></iframe>
+
+        <!-- ── VIDEO 1 (WIDE HERO CARD) ── -->
+        <article class="project-card card-wide" data-reveal>
+          <div class="card-media drive-wrap">
+            <iframe
+              src="https://drive.google.com/file/d/1rjjgQFs8OsctOCPP3bbuncvTRnKVeZNh/preview"
+              allow="autoplay; encrypted-media"
+              allowfullscreen
+              loading="lazy"
+              title="Project 01">
+            </iframe>
           </div>
-          <div class="project-body">
-            <span class="tag">Reel</span>
-            <h3>Trending Reel</h3>
-            <p>Sharp, quick edits with high retention focus.</p>
-            <a href="https://www.instagram.com/reel/DPEE2UpAd1K/?igsh=OXByaGhsd2k1ZWs=" target="_blank" class="btn-link">
-              View on Instagram <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            </a>
-          </div>
-        </article>
-  
-        <!-- Project 2 -->
-        <article class="project-card" data-aos="fade-up" data-aos-delay="200">
-          <div class="project-thumb glass-card">
-            <iframe src="https://www.instagram.com/skindoctorheena/embed" 
-                    width="100%" height="300" frameborder="0" allowfullscreen></iframe>
-          </div>
-          <div class="project-body">
-            <span class="tag">Reel</span>
-            <h3>Skin Doctor Heena</h3>
-            <p>Medical + lifestyle reels with clean storytelling edits.</p>
-            <a href="https://www.instagram.com/reel/DOP1he0iGNb/?igsh=bzd6NmhxMmUwando" target="_blank" class="btn-link">
-              View on Instagram <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            </a>
-          </div>
-        </article>
-  
-        <!-- Project 3 -->
-        <article class="project-card" data-aos="fade-up" data-aos-delay="300">
-          <div class="project-thumb glass-card">
-            <iframe src="https://www.instagram.com/reel/DNGEZDEvCqw/embed" 
-                    width="100%" height="300" frameborder="0" allowfullscreen></iframe>
-          </div>
-          <div class="project-body">
-            <span class="tag">Reel</span>
-            <h3>AI generated video</h3>
-            <p>Cinematic short edits for viral social presence.</p>
-            <a href="https://www.instagram.com/reel/DPljxpagdpM/?igsh=MWU3dTZ1anQwNW90dg==" target="_blank" class="btn-link">
-              View on Instagram <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            </a>
-          </div>
-        </article>
-  
-        <!-- Project 4 -->
-  
-  
-     
-        
-       
-  
-        <!-- Project 7 (Local Video 2) -->
-        <article class="project-card" data-aos="fade-up" data-aos-delay="700">
-          <div class="project-thumb glass-card">
-            <video autoplay muted loop playsinline height="300" style="width:100%; border-radius:15px;">
-              <source src="Ironman Reel.mov" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-          </div>
-          <div class="project-body">
-            <span class="tag">New Reel</span>
-            <h3>Mix of story and animation</h3>
-            <p>Full-length storytelling crafted to hold audience attention from start to finish.</p>
-            <a href="https://drive.google.com/file/d/11EECYVY9yHCGORBYkBDcinUTURuVFnc2/view?usp=drivesdk" target="_blank" class="btn-link">
-              Watch full video <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            </a> 
-          </div>
-        </article>
-  
-        <!-- project 8 -->
-        <article class="project-card" data-aos="fade-up" data-aos-delay="400">
-          <div class="project-thumb glass-card">
-            <iframe src="https://www.instagram.com/reel/DLKUXVNBqQB/embed" 
-                    width="100%" height="300" frameborder="0" allowfullscreen></iframe>
-          </div>
-          <div class="project-body">
-            <span class="tag">Reel</span>
-            <h3>Trending Reel</h3>
-            <p>Sharp, quick edits with high retention focus.</p>
-            <a href="https://www.instagram.com/reel/DPQ8pA0Aa4N/?igsh=MXN6cjZlODR3MWdpMw==" target="_blank" class="btn-link">
-              View on Instagram <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            </a>
-          </div>
-        </article>
-  
-        <!-- Project 9  -->
-        <article class="project-card" data-aos="fade-up" data-aos-delay="400">
-          <div class="project-thumb glass-card">
-            <iframe src="https://www.instagram.com/reel/DQ4UY1hErlb/embed" 
-                    width="100%" height="300" frameborder="0" allowfullscreen></iframe>
-          </div>
-          <div class="project-body">
-            <span class="tag">Reel</span>
-            <h3>Trending Reel</h3>
-            <p>Sharp, quick edits with high retention focus.</p>
-            <a href="https://www.instagram.com/reel/DQ4UY1hErlb/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA%3D%3D" target="_blank" class="btn-link">
-              View on Instagram <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          <div class="card-body">
+            <span class="card-tag-inline">Reel</span>
+            <h3>Project 01</h3>
+            <p>Sharp cinematic edit — update this title &amp; description with your project name.</p>
+            <a href="https://drive.google.com/file/d/1rjjgQFs8OsctOCPP3bbuncvTRnKVeZNh/view?usp=share_link" target="_blank" class="card-link">
+              Watch Full <i class="fa-solid fa-arrow-up-right-from-square"></i>
             </a>
           </div>
         </article>
 
-        <!-- project 10 -->
-        <article class="project-card" data-aos="fade-up" data-aos-delay="400">
-          <div class="project-thumb glass-card">
-            <iframe src="https://www.instagram.com/reel/DRCZ4gRklN4/embed
-            " 
-                    width="100%" height="300" frameborder="0" allowfullscreen></iframe>
+        <!-- ── VIDEO 2 ── -->
+        <article class="project-card" data-reveal data-delay="100">
+          <div class="card-media drive-wrap">
+            <iframe
+              src="https://drive.google.com/file/d/1WvmwH2cI105lHVn-CdDxaYGBNKJefwoW/preview"
+              allow="autoplay; encrypted-media"
+              allowfullscreen
+              loading="lazy"
+              title="Project 02">
+            </iframe>
           </div>
-          <div class="project-body">
-            <span class="tag">Reel</span>
-            <h3>Trending Reel</h3>
-            <p>Sharp, quick edits with high retention focus.</p>
-            <a href="https://www.instagram.com/reel/DRCZ4gRklN4/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA%3D%3D" target="_blank" class="btn-link">
-              View on Instagram <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          <div class="card-body">
+            <span class="card-tag-inline">Reel</span>
+            <h3>Project 02</h3>
+            <p>Emotionally driven storytelling with precision cuts and rhythm.</p>
+            <a href="https://drive.google.com/file/d/1WvmwH2cI105lHVn-CdDxaYGBNKJefwoW/view?usp=share_link" target="_blank" class="card-link">
+              Watch Full <i class="fa-solid fa-arrow-up-right-from-square"></i>
             </a>
           </div>
         </article>
- 
-        <!-- project 11 -->
-        <article class="project-card" data-aos="fade-up" data-aos-delay="700">
-          <div class="project-thumb glass-card">
-            <video autoplay muted loop playsinline height="300" style="width:100%; border-radius:15px;">
-              <source src="Death.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-          </div>
-          <div class="project-body">
-            <span class="tag">New Reel</span>
-            <h3>Death Reel</h3>
-            <p>Reel.</p>
-            <a href="https://drive.google.com/file/d/1je86peivkYgdQ6SDiUngv6kpyvB6eTZ1/view" target="_blank" class="btn-link">
-              Watch full video <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            </a> 
-          </div>
-        </article>
 
-         <!-- project 12 -->
-         <article class="project-card" data-aos="fade-up" data-aos-delay="700">
-          <div class="project-thumb glass-card">
-            <video autoplay muted loop playsinline height="300" style="width:100%; border-radius:15px;">
-              <source src="Indianreel.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
+        <!-- ── VIDEO 3 ── -->
+        <article class="project-card" data-reveal data-delay="150">
+          <div class="card-media drive-wrap">
+            <iframe
+              src="https://drive.google.com/file/d/1ocO1Y40EjPGpDSKDCquOCWMI7i7t3Ama/preview"
+              allow="autoplay; encrypted-media"
+              allowfullscreen
+              loading="lazy"
+              title="Project 03">
+            </iframe>
           </div>
-          <div class="project-body">
-            <span class="tag">New Reel</span>
-            <h3>Indian Reel</h3>
-            <p>Reel</p>
-            <a href="https://drive.google.com/file/d/1ytycKMBEzUMN7TxQ3pzH8ypGbKuSYWbP/view" target="_blank" class="btn-link">
-              Watch full video <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            </a> 
+          <div class="card-body">
+            <span class="card-tag-inline">Cinematic</span>
+            <h3>Project 03</h3>
+            <p>High-retention format with bold visual hooks and pacing.</p>
+            <a href="https://drive.google.com/file/d/1ocO1Y40EjPGpDSKDCquOCWMI7i7t3Ama/view?usp=share_link" target="_blank" class="card-link">
+              Watch Full <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
           </div>
         </article>
 
-          <!-- project 13  -->
+        <!-- ── VIDEO 4 ── -->
+        <article class="project-card" data-reveal data-delay="200">
+          <div class="card-media drive-wrap">
+            <iframe
+              src="https://drive.google.com/file/d/1KczRVHBraTnhdB2CSV5H2xn8i6n_r2dR/preview"
+              allow="autoplay; encrypted-media"
+              allowfullscreen
+              loading="lazy"
+              title="Project 04">
+            </iframe>
+          </div>
+          <div class="card-body">
+            <span class="card-tag-inline">Motion</span>
+            <h3>Project 04</h3>
+            <p>Dynamic animation blend with cinematic color grading.</p>
+            <a href="https://drive.google.com/file/d/1KczRVHBraTnhdB2CSV5H2xn8i6n_r2dR/view?usp=share_link" target="_blank" class="card-link">
+              Watch Full <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </article>
 
-          <article class="project-card" data-aos="fade-up" data-aos-delay="700">
-            <div class="project-thumb glass-card">
-              <video autoplay muted loop playsinline height="300" style="width:100%; border-radius:15px;">
-                <source src="AQIreel.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-            <div class="project-body">
-              <span class="tag">New Reel</span>
-              <h3>AQI Reel</h3>
-              <p>Reel.</p>
-              <a href="https://drive.google.com/file/d/19JaQQb77-08zkJN38vGzqQTpWO7veJiU/view" target="_blank" class="btn-link">
-                Watch full video <i class="fa-solid fa-arrow-up-right-from-square"></i>
-              </a> 
-            </div>
-          </article>
+        <!-- ── VIDEO 5 ── -->
+        <article class="project-card" data-reveal data-delay="250">
+          <div class="card-media drive-wrap">
+            <iframe
+              src="https://drive.google.com/file/d/16dXmDJVlZnkBu1HNEmRyO4TjKck5dzcP/preview"
+              allow="autoplay; encrypted-media"
+              allowfullscreen
+              loading="lazy"
+              title="Project 05">
+            </iframe>
+          </div>
+          <div class="card-body">
+            <span class="card-tag-inline">Story</span>
+            <h3>Project 05</h3>
+            <p>Narrative-first edit built for engagement and emotional impact.</p>
+            <a href="https://drive.google.com/file/d/16dXmDJVlZnkBu1HNEmRyO4TjKck5dzcP/view?usp=share_link" target="_blank" class="card-link">
+              Watch Full <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </article>
 
-           <!-- project 14 -->
-           <article class="project-card" data-aos="fade-up" data-aos-delay="700">
-            <div class="project-thumb glass-card">
-              <video autoplay muted loop playsinline height="300" style="width:100%; border-radius:15px;">
-                <source src="MASSAIreel.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-            <div class="project-body">
-              <span class="tag">New Reel</span>
-              <h3>Massai Reel</h3>
-              <p>Reel.</p>
-              <a href="https://drive.google.com/file/d/1je86peivkYgdQ6SDiUngv6kpyvB6eTZ1/view" target="_blank" class="btn-link">
-                Watch full video <i class="fa-solid fa-arrow-up-right-from-square"></i>
-              </a> 
-            </div>
-          </article>
+        <!-- ── VIDEO 6 ── -->
+        <article class="project-card" data-reveal data-delay="300">
+          <div class="card-media drive-wrap">
+            <iframe
+              src="https://drive.google.com/file/d/1xjZTWHmfOG04BpwwQEBLX5I7y_ypZvEV/preview"
+              allow="autoplay; encrypted-media"
+              allowfullscreen
+              loading="lazy"
+              title="Project 06">
+            </iframe>
+          </div>
+          <div class="card-body">
+            <span class="card-tag-inline">Viral</span>
+            <h3>Project 06</h3>
+            <p>Platform-native short reel optimised for retention and virality.</p>
+            <a href="https://drive.google.com/file/d/1xjZTWHmfOG04BpwwQEBLX5I7y_ypZvEV/view?usp=share_link" target="_blank" class="card-link">
+              Watch Full <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </article>
 
- 
-      </div>
-
-
+      </div><!-- /portfolio-grid -->
     </div>
   </section>
-  
-  <!-- SERVICES -->
-  <section id="services" class="services-section">
-    <!-- Particles Canvas -->
-    <canvas id="services-particles"></canvas>
-  
-    <div class="container">
-      <h2 data-aos="fade-up">My Services</h2>
-      <p data-aos="fade-up" data-aos-delay="100">
-        Professional video editing services tailored to bring your vision to life with creativity.
-      </p>
-      <div class="services-grid">
-  
-        <!-- Service 1 -->
-        <div class="service-card" data-aos="flip-left">
-          <div class="service-icon">🎬</div>
-          <h3>Video Editing</h3>
-          <p>Seamless cuts, multi-camera sync, pacing optimization, and storytelling.</p>
-        </div>
-  
-        <!-- Service 2 -->
-      
-        <!-- Service 3 -->
-        <div class="service-card" data-aos="flip-left" data-aos-delay="200">
-          <div class="service-icon">🎧</div>
-          <h3>Sound Design</h3>
-          <p>Audio mixing, music sync, effects, and clean voice enhancement.</p>
-        </div>
-  
-        <!-- Service 4 -->
-        <div class="service-card" data-aos="flip-left" data-aos-delay="300">
-          <div class="service-icon">✨</div>
-          <h3>Motion Graphics</h3>
-          <p>Animated titles, logo animations, infographics, and visual effects.</p>
-        </div>
-  
-        <!-- Service 5 -->
-        <div class="service-card" data-aos="zoom-in" data-aos-delay="400">
-          <div class="service-icon">🎞️</div>
-          <h3>DaVinci Resolve</h3>
-          <p>Expert in editing & color grading with DaVinci Resolve for cinematic visuals.</p>
-        </div>
-  
-        <!-- Service 6 -->
-        <div class="service-card" data-aos="zoom-in" data-aos-delay="500">
-          <div class="service-icon">💻</div>
-          <h3>Premiere Pro</h3>
-          <p>Professional video editing with Adobe Premiere Pro for sleek projects.</p>
-        </div>
-  
-        <!-- Service 7 -->
-        <div class="service-card" data-aos="zoom-in" data-aos-delay="600">
-          <div class="service-icon">⚡</div>
-          <h3>After Effects</h3>
-          <p>Dynamic animations, VFX, and advanced motion graphics using After Effects.</p>
-        </div>
-  
-      </div>
-    </div>
-  </section>
-  
-  
 
   <!-- STATS -->
-  <section id="statistics" class="statistics-section">
+  <section id="statistics" class="stats-section">
     <div class="container">
-      <div class="stats-grid">
-  
-        <!-- Projects -->
-        <div class="stat-card" data-aos="zoom-in">
-          <h3 class="counter" data-target="300" data-suffix="+">0</h3>
+      <div class="stats-row">
+        <div class="stat-item" data-reveal>
+          <h3><span class="counter" data-target="300" data-suffix="+">0</span></h3>
           <p>Projects Completed</p>
         </div>
-  
-        <!-- Clients -->
-        <div class="stat-card" data-aos="zoom-in" data-aos-delay="100">
-          <h3 class="counter" data-target="10" data-suffix="">0</h3>
+        <div class="stat-divider"></div>
+        <div class="stat-item" data-reveal data-delay="100">
+          <h3><span class="counter" data-target="10" data-suffix="">0</span></h3>
           <p>Happy Clients</p>
         </div>
-  
-        <!-- Views -->
-        <div class="stat-card" data-aos="zoom-in" data-aos-delay="200">
-          <h3 class="counter" data-target="80" data-suffix="M+">0</h3>
+        <div class="stat-divider"></div>
+        <div class="stat-item" data-reveal data-delay="200">
+          <h3><span class="counter" data-target="70" data-suffix="M+">0</span></h3>
           <p>Views Generated</p>
         </div>
-  
-        <!-- Turnaround -->
-        <div class="stat-card" data-aos="zoom-in" data-aos-delay="300">
-          <h3 class="counter-text">5–8hr</h3>
+        <div class="stat-divider"></div>
+        <div class="stat-item" data-reveal data-delay="300">
+          <h3 class="stat-fixed">5–8hr</h3>
           <p>Average Turnaround</p>
         </div>
-  
       </div>
     </div>
   </section>
-  
-  
-  
+
+  <!-- SERVICES -->
+  <section id="services" class="services-section">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <span class="section-eyebrow">What I Do</span>
+        <h2 class="section-title">Services</h2>
+      </div>
+      <div class="services-list">
+        <div class="service-item" data-reveal><div class="svc-num">01</div><div class="svc-content"><h3>Video Editing</h3><p>Seamless cuts, multi-camera sync, pacing optimization, and storytelling that holds attention.</p></div><div class="svc-icon">🎬</div></div>
+        <div class="service-item" data-reveal data-delay="100"><div class="svc-num">02</div><div class="svc-content"><h3>Sound Design</h3><p>Audio mixing, music sync, sound effects, and clean voice enhancement for impact.</p></div><div class="svc-icon">🎧</div></div>
+        <div class="service-item" data-reveal data-delay="150"><div class="svc-num">03</div><div class="svc-content"><h3>Motion Graphics</h3><p>Animated titles, logo animations, infographics, and visual effects that elevate.</p></div><div class="svc-icon">✨</div></div>
+        <div class="service-item" data-reveal data-delay="200"><div class="svc-num">04</div><div class="svc-content"><h3>Color Grading</h3><p>Cinematic color grading with DaVinci Resolve for a professional, emotive visual tone.</p></div><div class="svc-icon">🎞️</div></div>
+        <div class="service-item" data-reveal data-delay="250"><div class="svc-num">05</div><div class="svc-content"><h3>After Effects &amp; VFX</h3><p>Dynamic animations, visual effects, and advanced motion graphics for premium output.</p></div><div class="svc-icon">⚡</div></div>
+        <div class="service-item" data-reveal data-delay="300"><div class="svc-num">06</div><div class="svc-content"><h3>Short-form Content</h3><p>Platform-native reels, shorts, and clips optimised for retention and virality.</p></div><div class="svc-icon">📱</div></div>
+      </div>
+    </div>
+  </section>
+
   <!-- TESTIMONIALS -->
   <section id="testimonials" class="testimonials-section">
-    <!-- Particles Canvas -->
-    <canvas id="testimonials-particles"></canvas>
-  
+    <canvas id="testimonialsCanvas"></canvas>
     <div class="container">
-      <h2 data-aos="fade-up">What Clients Say</h2>
-      <div class="testimonials-grid">
-  
-        <!-- Testimonial 1 -->
-        <div class="testimonial-card" data-aos="fade-right" data-aos-delay="100">
-          <p>“Working with Pawan has been great. His edits are clean, creative, and always on time. He’s easy to talk to and makes the whole process simple.”</p>
-          <h4>- OpenLetterYT</h4>
+      <div class="section-header" data-reveal>
+        <span class="section-eyebrow">Client Voices</span>
+        <h2 class="section-title">What They Say</h2>
+      </div>
+      <div class="tslider" data-reveal>
+        <div class="tslider-viewport" id="tViewport">
+          <div class="tslider-track" id="tTrack">
+            <div class="tcard">
+              <div class="tcard-top"><div class="tcard-stars">★★★★★</div><div class="tcard-quote-mark">"</div></div>
+              <p class="tcard-text">Working with Pawan has been great. His edits are clean, creative, and always on time. He's easy to talk to and makes the whole process simple.</p>
+              <div class="tcard-author"><div class="tcard-avatar">OL</div><div class="tcard-meta"><strong>OpenLetterYT</strong><span>YouTube Creator</span></div></div>
+            </div>
+            <div class="tcard">
+              <div class="tcard-top"><div class="tcard-stars">★★★★★</div><div class="tcard-quote-mark">"</div></div>
+              <p class="tcard-text">Pawan really knows his editing. He always delivers when he says he will, and the work looks amazing. Plus, he's very easy to work with.</p>
+              <div class="tcard-author"><div class="tcard-avatar">DM</div><div class="tcard-meta"><strong>Deb Malya Das</strong><span>Content Creator</span></div></div>
+            </div>
+            <div class="tcard">
+              <div class="tcard-top"><div class="tcard-stars">★★★★★</div><div class="tcard-quote-mark">"</div></div>
+              <p class="tcard-text">I've done a few projects with Pawan and every time he's been reliable. The edits come out smooth and professional. Always stress-free.</p>
+              <div class="tcard-author"><div class="tcard-avatar">RV</div><div class="tcard-meta"><strong>Rohit_thevideoguy</strong><span>Finance with Sharan</span></div></div>
+            </div>
+            <div class="tcard">
+              <div class="tcard-top"><div class="tcard-stars">★★★★★</div><div class="tcard-quote-mark">"</div></div>
+              <p class="tcard-text">Pawan is awesome at editing. He gets the job done right, always on time, and makes working together super easy and comfortable.</p>
+              <div class="tcard-author"><div class="tcard-avatar">DH</div><div class="tcard-meta"><strong>Dr. Heena</strong><span>Skin Doctor</span></div></div>
+            </div>
+          </div>
         </div>
-  
-        <!-- Testimonial 2 -->
-        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
-          <p>“Pawan really knows his editing. He always delivers when he says he will, and the work looks amazing. Plus, he’s very easy to work with.”</p>
-          <h4>- Deb Malya Das</h4>
+        <div class="tcontrols">
+          <button class="tnav-btn" id="tPrev" aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button>
+          <div class="tdots" id="tDots"></div>
+          <button class="tnav-btn" id="tNext" aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>
         </div>
-  
-        <!-- Testimonial 3 -->
-        <div class="testimonial-card" data-aos="fade-left" data-aos-delay="300">
-          <p>“I’ve done a few projects with Pawan and every time he’s been reliable. The edits come out smooth and professional. Working with him is always stress-free.”</p>
-          <h4>- Rohit_thevideoguy</h4>
-        </div>
-  
-        <!-- Testimonial 4 -->
-        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="400">
-          <p>“Pawan is awesome at editing. He gets the job done right, always on time, and makes working together super easy and comfortable.”</p>
-          <h4>- Dr Heena</h4>
-        </div>
-  
       </div>
     </div>
   </section>
-  
 
   <!-- CONTACT -->
   <section id="contact" class="contact-section">
-    <!-- Particles Canvas -->
-    <canvas id="contact-particles"></canvas>
-  
-    <div class="container" data-aos="fade-up">
-      <h2>Send Me a Message</h2>
-      <p class="contact-subtitle">Have a project in mind? Let's create something amazing together.</p>
-      <form class="contact-form" data-aos="fade-up" data-aos-delay="100">
-        <div class="form-group"><input type="text" placeholder="Your Name" required></div>
-        <div class="form-group"><input type="email" placeholder="Your Email" required></div>
-        <div class="form-group"><input type="text" placeholder="Subject"></div>
-        <div class="form-group"><textarea placeholder="Your Message" rows="6" required></textarea></div>
-        <button type="submit" class="submit-btn">Send Message</button>
-      </form>
-    </div>
-  </section>
-  
-  
-  <!-- FOOTER -->
-  <footer class="site-footer" data-aos="fade-up">
-    <div class="container">
-      <p>© 2024 VideoEditor | Crafted with ❤️</p>
-      <div class="social-icons">
-        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
-        <a href="mailto:example@mail.com"><i class="fa-solid fa-envelope"></i></a>
+    <div class="contact-grid">
+      <div class="contact-left" data-reveal>
+        <span class="section-eyebrow">Get In Touch</span>
+        <h2 class="section-title">Let's Create <em>Something Amazing</em></h2>
+        <p>Have a project in mind? Let's talk about it. Currently available for new work.</p>
+        <div class="contact-methods">
+          <a href="mailto:hardupawan69@gmail.com" class="cmethod"><i class="fa-solid fa-envelope"></i><span>hardupawan69@gmail.com</span></a>
+          <a href="https://wa.me/917412078575" target="_blank" class="cmethod"><i class="fa-brands fa-whatsapp"></i><span>+91 74120 78575</span></a>
+        </div>
+      </div>
+      <div class="contact-right" data-reveal data-delay="200">
+        <form class="contact-form" id="contactForm">
+          <div class="field-row">
+            <div class="field-group">
+              <input type="text" id="fname" placeholder=" " required autocomplete="off">
+              <label for="fname">Your Name</label>
+            </div>
+            <div class="field-group">
+              <input type="email" id="femail" placeholder=" " required autocomplete="off">
+              <label for="femail">Your Email</label>
+            </div>
+          </div>
+          <div class="field-group">
+            <input type="text" id="fsubject" placeholder=" " autocomplete="off">
+            <label for="fsubject">Subject</label>
+          </div>
+          <div class="field-group">
+            <textarea id="fmessage" rows="5" placeholder=" " required></textarea>
+            <label for="fmessage">Your Message</label>
+          </div>
+          <button type="submit" class="btn-primary submit-btn">
+            <span>Send Message</span>
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+          <div class="form-success" id="formSuccess">✦ Message received! Pawan will be in touch shortly.</div>
+        </form>
       </div>
     </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-mark">PH</span>
+        <p>Making frames feel alive.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#portfolio">Work</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:hardupawan69@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Pawan Hardu. Crafted with precision.</p>
+    </div>
   </footer>
-  
-  <!-- WhatsApp Sticky Button -->
-  <a href="https://wa.me/917412078575" class="whatsapp-btn" target="_blank">
-    <img src="whatsppp1.jpg" alt="WhatsApp"/>
+
+  <a href="https://wa.me/917412078575" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
   </a>
 
-  <!-- JS -->
-
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const canvas = document.getElementById("hero-particles");
-      if (!canvas) return; // safety check
-      const ctx = canvas.getContext("2d");
-      let particles = [];
-    
-      function resizeCanvas() {
-        canvas.width = window.innerWidth;
-        const section = document.querySelector("#hero");
-        canvas.height = section ? section.offsetHeight : window.innerHeight;
-      }
-    
-      window.addEventListener("resize", resizeCanvas);
-      resizeCanvas();
-    
-      class Particle {
-        constructor() {
-          this.x = Math.random() * canvas.width;
-          this.y = Math.random() * canvas.height;
-          this.radius = Math.random() * 2 + 1;
-          this.dx = (Math.random() - 0.5) * 0.5;
-          this.dy = (Math.random() - 0.5) * 0.5;
-        }
-        draw() {
-          ctx.beginPath();
-          ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-          ctx.fillStyle = "rgba(226,255,216,0.7)";
-          ctx.fill();
-        }
-        update() {
-          this.x += this.dx;
-          this.y += this.dy;
-    
-          if (this.x < 0 || this.x > canvas.width) this.dx *= -1;
-          if (this.y < 0 || this.y > canvas.height) this.dy *= -1;
-    
-          this.draw();
-        }
-      }
-    
-      function initParticles() {
-        particles = [];
-        for (let i = 0; i < 80; i++) { // adjust number of particles
-          particles.push(new Particle());
-        }
-      }
-    
-      function animateParticles() {
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
-        particles.forEach(p => p.update());
-        requestAnimationFrame(animateParticles);
-      }
-    
-      initParticles();
-      animateParticles();
-    });
-    </script>
-
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const canvas = document.getElementById("about-particles");
-    if (!canvas) return;
-    const ctx = canvas.getContext("2d");
-    let particles = [];
-  
-    function resizeCanvas() {
-      canvas.width = window.innerWidth;
-      const section = document.querySelector("#about");
-      canvas.height = section ? section.offsetHeight : window.innerHeight;
-    }
-  
-    window.addEventListener("resize", resizeCanvas);
-    resizeCanvas();
-  
-    class Particle {
-      constructor() {
-        this.x = Math.random() * canvas.width;
-        this.y = Math.random() * canvas.height;
-        this.radius = Math.random() * 2 + 1;
-        this.dx = (Math.random() - 0.5) * 0.5;
-        this.dy = (Math.random() - 0.5) * 0.5;
-      }
-      draw() {
-        ctx.beginPath();
-        ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-        ctx.fillStyle = "rgba(226,255,216,0.7)";
-        ctx.fill();
-      }
-      update() {
-        this.x += this.dx;
-        this.y += this.dy;
-  
-        if (this.x < 0 || this.x > canvas.width) this.dx *= -1;
-        if (this.y < 0 || this.y > canvas.height) this.dy *= -1;
-  
-        this.draw();
-      }
-    }
-  
-    function initParticles() {
-      particles = [];
-      for (let i = 0; i < 60; i++) {
-        particles.push(new Particle());
-      }
-    }
-  
-    function animateParticles() {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      particles.forEach(p => p.update());
-      requestAnimationFrame(animateParticles);
-    }
-  
-    initParticles();
-    animateParticles();
-  });
-  </script>
- 
- <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const canvas = document.getElementById("portfolio-particles");
-    if (!canvas) return;
-    const ctx = canvas.getContext("2d");
-    let particles = [];
-  
-    function resizeCanvas() {
-      canvas.width = window.innerWidth;
-      const section = document.querySelector("#portfolio");
-      canvas.height = section ? section.offsetHeight : window.innerHeight;
-    }
-  
-    window.addEventListener("resize", resizeCanvas);
-    resizeCanvas();
-  
-    class Particle {
-      constructor() {
-        this.x = Math.random() * canvas.width;
-        this.y = Math.random() * canvas.height;
-        this.radius = Math.random() * 2 + 1;
-        this.dx = (Math.random() - 0.5) * 0.5;
-        this.dy = (Math.random() - 0.5) * 0.5;
-      }
-      draw() {
-        ctx.beginPath();
-        ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-        ctx.fillStyle = "rgba(226,255,216,0.7)";
-        ctx.fill();
-      }
-      update() {
-        this.x += this.dx;
-        this.y += this.dy;
-  
-        if (this.x < 0 || this.x > canvas.width) this.dx *= -1;
-        if (this.y < 0 || this.y > canvas.height) this.dy *= -1;
-  
-        this.draw();
-      }
-    }
-  
-    function initParticles() {
-      particles = [];
-      for (let i = 0; i < 60; i++) {
-        particles.push(new Particle());
-      }
-    }
-  
-    function animateParticles() {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      particles.forEach(p => p.update());
-      requestAnimationFrame(animateParticles);
-    }
-  
-    initParticles();
-    animateParticles();
-  });
-  </script>
-  
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const counters = document.querySelectorAll(".counter");
-      let started = false;
-    
-      function animateCounters() {
-        if (started) return; // prevent re-trigger
-        const section = document.querySelector("#statistics");
-        const sectionTop = section.getBoundingClientRect().top;
-        const triggerPoint = window.innerHeight * 0.8;
-    
-        if (sectionTop < triggerPoint) {
-          counters.forEach(counter => {
-            const target = +counter.getAttribute("data-target");
-            const suffix = counter.getAttribute("data-suffix") || "";
-    
-            let current = 0;
-            const increment = Math.ceil(target / 150); // adjust speed
-    
-            const updateCount = () => {
-              current += increment;
-              if (current < target) {
-                counter.innerText = current + suffix;
-                requestAnimationFrame(updateCount);
-              } else {
-                counter.innerText = target + suffix;
-              }
-            };
-    
-            updateCount();
-          });
-          started = true;
-        }
-      }
-    
-      window.addEventListener("scroll", animateCounters);
-      animateCounters(); // trigger in case already visible
-    });
-    </script>
-    
-
-  <script>
-    const canvas = document.getElementById("services-particles");
-    const ctx = canvas.getContext("2d");
-    let particles = [];
-  
-    function resizeCanvas() {
-      canvas.width = window.innerWidth;
-      canvas.height = document.querySelector("#services").offsetHeight;
-    }
-    window.addEventListener("resize", resizeCanvas);
-    resizeCanvas();
-  
-    class Particle {
-      constructor() {
-        this.x = Math.random() * canvas.width;
-        this.y = Math.random() * canvas.height;
-        this.radius = Math.random() * 2 + 1;
-        this.dx = (Math.random() - 0.5) * 0.5;
-        this.dy = (Math.random() - 0.5) * 0.5;
-      }
-      draw() {
-        ctx.beginPath();
-        ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-        ctx.fillStyle = "rgba(226,255,216,0.7)";
-        ctx.fill();
-      }
-      update() {
-        this.x += this.dx;
-        this.y += this.dy;
-  
-        if (this.x < 0 || this.x > canvas.width) this.dx *= -1;
-        if (this.y < 0 || this.y > canvas.height) this.dy *= -1;
-  
-        this.draw();
-      }
-    }
-  
-    function initParticles() {
-      particles = [];
-      for (let i = 0; i < 70; i++) {
-        particles.push(new Particle());
-      }
-    }
-  
-    function animateParticles() {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      particles.forEach(p => p.update());
-      requestAnimationFrame(animateParticles);
-    }
-  
-    initParticles();
-    animateParticles();
-  </script>
-  
-  <script>
-    // Counter Animation with suffix
-    const counters = document.querySelectorAll(".counter");
-    let started = false;
-  
-    function animateCounters() {
-      if (started) return;
-      const section = document.querySelector("#statistics");
-      const sectionTop = section.getBoundingClientRect().top;
-      const triggerPoint = window.innerHeight * 0.8;
-  
-      if (sectionTop < triggerPoint) {
-        counters.forEach(counter => {
-          const target = +counter.getAttribute("data-target");
-          const suffix = counter.getAttribute("data-suffix") || "";
-          
-          const updateCount = () => {
-            const current = +counter.innerText.replace(/\D/g, ""); // remove non-digits
-            const increment = target / 150;
-  
-            if (current < target) {
-              counter.innerText = Math.ceil(current + increment) + suffix;
-              setTimeout(updateCount, 20);
-            } else {
-              counter.innerText = target + suffix;
-            }
-          };
-          updateCount();
-        });
-        started = true;
-      }
-    }
-  
-    window.addEventListener("scroll", animateCounters);
-  </script>
-  
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const canvas = document.getElementById("testimonials-particles");
-      if (!canvas) return; // safety check
-      const ctx = canvas.getContext("2d");
-      let particles = [];
-  
-      function resizeCanvas() {
-        canvas.width = window.innerWidth;
-        const section = document.querySelector("#testimonials");
-        canvas.height = section ? section.offsetHeight : window.innerHeight;
-      }
-  
-      window.addEventListener("resize", resizeCanvas);
-      resizeCanvas();
-  
-      class Particle {
-        constructor() {
-          this.x = Math.random() * canvas.width;
-          this.y = Math.random() * canvas.height;
-          this.radius = Math.random() * 2 + 1;
-          this.dx = (Math.random() - 0.5) * 0.5;
-          this.dy = (Math.random() - 0.5) * 0.5;
-        }
-        draw() {
-          ctx.beginPath();
-          ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-          ctx.fillStyle = "rgba(226,255,216,0.7)";
-          ctx.fill();
-        }
-        update() {
-          this.x += this.dx;
-          this.y += this.dy;
-  
-          if (this.x < 0 || this.x > canvas.width) this.dx *= -1;
-          if (this.y < 0 || this.y > canvas.height) this.dy *= -1;
-  
-          this.draw();
-        }
-      }
-  
-      function initParticles() {
-        particles = [];
-        for (let i = 0; i < 60; i++) {
-          particles.push(new Particle());
-        }
-      }
-  
-      function animateParticles() {
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
-        particles.forEach(p => p.update());
-        requestAnimationFrame(animateParticles);
-      }
-  
-      initParticles();
-      animateParticles();
-    });
-  </script>
-  
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const canvas = document.getElementById("contact-particles");
-      if (!canvas) return;
-      const ctx = canvas.getContext("2d");
-      let particles = [];
-  
-      function resizeCanvas() {
-        canvas.width = window.innerWidth;
-        const section = document.querySelector("#contact");
-        canvas.height = section ? section.offsetHeight : window.innerHeight;
-      }
-  
-      window.addEventListener("resize", resizeCanvas);
-      resizeCanvas();
-  
-      class Particle {
-        constructor() {
-          this.x = Math.random() * canvas.width;
-          this.y = Math.random() * canvas.height;
-          this.radius = Math.random() * 2 + 1;
-          this.dx = (Math.random() - 0.5) * 0.5;
-          this.dy = (Math.random() - 0.5) * 0.5;
-        }
-        draw() {
-          ctx.beginPath();
-          ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-          ctx.fillStyle = "rgba(226,255,216,0.6)";
-          ctx.fill();
-        }
-        update() {
-          this.x += this.dx;
-          this.y += this.dy;
-  
-          if (this.x < 0 || this.x > canvas.width) this.dx *= -1;
-          if (this.y < 0 || this.y > canvas.height) this.dy *= -1;
-  
-          this.draw();
-        }
-      }
-  
-      function initParticles() {
-        particles = [];
-        for (let i = 0; i < 60; i++) {
-          particles.push(new Particle());
-        }
-      }
-  
-      function animateParticles() {
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
-        particles.forEach(p => p.update());
-        requestAnimationFrame(animateParticles);
-      }
-  
-      initParticles();
-      animateParticles();
-    });
-  </script>
-  
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <script src="script.js"></script>
-  <script>
-    AOS.init({duration: 1200, once: true});
-  </script>
 </body>
 </html>
